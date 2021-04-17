@@ -1,0 +1,65 @@
+#product1 {
+    width: 512px;
+    /*position: absolute;*/
+    background: rgb(25, 83, 49);
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #product_image
+  {
+      border-radius: 25px;
+  }
+  .line
+  {
+      background: rgb(120, 201, 67);
+      color:  rgb(120, 201, 67);
+  }
+  .line2
+  {
+      color:  rgb(201, 192, 76);
+      width: 60%;
+  }
+
+  #price-value
+  {
+      font-size: 30px;
+  }
+
+  .details
+  {
+      color: white;
+      font-size: large;
+  }
+  
+  #htmlTarget.hide {
+    z-index: -1;
+  }
+  #product1 h1 {
+    font-family: Arial;
+    font-size: 110px;
+    margin: 0;
+    vertical-align: top;
+    color: white;
+  }
+  #product1 h1 span {
+    color: tomato;
+  }
+  #htmlTarget {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  @media (max-width: 512px) {
+    #product1 {
+      width: 256px;
+      height: 126px;
+    }
+    #product1 h1 {
+      font-size: 55px;
+    }
+  } 
