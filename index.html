@@ -4,13 +4,14 @@
     <!-- Source of inspiration: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
     <!-- Source of inspiration: https://mayognaise.github.io/aframe-html-shader/basic/index.html -->
     <!-- Source of inspiration: https://github.com/supereggbert/aframe-htmlembed-component -->
-    <title>Product Info with AR</title>
+    <title>Fruit ninja with AR</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/3.3.1/aframe/build/aframe-ar.js"></script>
-    <script src="http://supereggbert.github.io/aframe-htmlembed-component/dist/build.js"></script> 
-    <script src="js/products.js"></script> <!-- custom JavaScript -->
+    <script src="https://unpkg.com/aframe-aabb-collider-component@3.1.0/dist/aframe-aabb-collider-component.min.js"></script>
+    <script src="js/fruits.js"></script> <!-- custom JavaScript -->
+    <script src="js/initializeColision.js"></script> <!-- custom JavaScript -->
     <script src="js/index.js"></script> <!-- custom JavaScript -->
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene id="primary_scene" embedded arjs='sourceType: webcam; trackingMethod: best;
@@ -21,46 +22,5 @@
       vr-mode-ui="enabled: false;" >
       <a-entity camera></a-entity>
     </a-scene>
-    <div style="display:none;">
-      <div id="product1">
-        <h1 id="title">Apple</h1>
-        <hr class="line">
-        <br/>
-        <img id="product_image" src="img/apple.png" width="300" height="300"> 
-        <br/>
-        <hr class="line2"/>
-        <div class="details">
-          <div class="price">
-            <strong>Price:</strong> <span id="price-value">5 RON/Kg</span>
-          </div>
-          <br/>
-          <hr class="line2"/>
-          <div class="description">
-            <strong>
-              <h3>Description</h3>
-            </strong>
-            <hr class="line2"/>
-            <span id="description-value">Kinnaur Apples are succulent, sweet and juicy. Kinnaur apples are the most premium variety of apples grown in India</span>
-          </div>
-          <br/>
-          <hr class="line">
-          <div class="reviews">
-            <div class="reviews-title">
-              <h3>
-              <strong>Reviews</strong>
-            </div>
-            <hr class="line2"/>
-            <br>
-            <span id="all_reviews">
-              <div class="review"> Best apples ever. @Andrew</div>
-              <hr class="line2"/>
-              <div class="review"> Sweetest apples I've ever eaten. @Mary</div>
-              <hr class="line2"/>
-              <div class="review"> I've tasted better apples than these. @John</div>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
