@@ -1,4 +1,4 @@
-# AR-product-info
+# AR-fruit-ninja
 
 Using your webcam, this software identifies a marker and then it draws a knife(using the [aframe](https://aframe.io/) library). Afterwards fruts start to fall and the user should slice thouse fruits and try to slice as many as possible. If X fruits are not sliced, the game will stop.
 
