@@ -54,3 +54,4 @@ Adding a new fruit to this software is very simple, you just need to create a ne
 
  - Show high score.
  - Restart the game without refreshing.
+ - Increase the falling velocity(add levels) over time(or after X sliced fruits)
