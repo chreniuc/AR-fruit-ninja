@@ -1,11 +1,3 @@
-//Function that returns true if the value is between [(reference - tolerance) (reference+tolerance)]
-function valueBetween(value, reference, tolerance) {
-  if(value >= reference - tolerance && value <= reference + tolerance) {
-      return true;
-  }
-  return false;
-}
-
 /**We register a new component named collect.
   - We do this in order to have acces to the tick function of the component.
     This function is called at each frame randering and in it we will make the collision-detection more accurate.
@@ -14,7 +6,7 @@ function valueBetween(value, reference, tolerance) {
 function initializeColiding()
 {
   console.debug("Initizlizing coliding.")
-  AFRAME.registerComponent('collect', {
+  AFRAME.registerComponent('slice', {
     //We added the aabb-collider as a dependency, as that component must be loaded first,
     //because in this component we use stuff from `aabb-collider`.
     dependencies: ["aabb-collider"],
